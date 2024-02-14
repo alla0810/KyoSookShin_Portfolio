@@ -73,66 +73,79 @@ const services = [{
     },
 ];
 
-const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
+const dataportfolio = [
     {
         img: "https://picsum.photos/400/700/?grayscale",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
+        repo: "#"                
+    },    
+    {    
+        img: "/images/projects/quoteme.png",
+        description: "Quote Generation depending on emotional state, social media to share quotes, personal emotion trace",
+        link: "https://quoteme-1b7p.onrender.com/",
+        repo: "https://github.com/charleshuurman/QuoteMe"
+    },
+    {
+        img: "/images/projects/book_search.png",
+        description: "MERN Stack to search for new books, RESTful API/GraphQL Google Book API",
+        link: "https://book-search-engine-etjd.onrender.com/",
+        repo: "https://github.com/alla0810/book-search-engine"                
+    },
+    {
+        img: "/images/projects/jate.png",
+        description: "installable/cacheable PWA based on Webpack",
+        link: "https://j-a-t-e-8d4l.onrender.com/",
+        repo: "https://github.com/alla0810/pwa-text-editor"        
+    },
+    {
+        img: "/images/projects/project2.png",
+        description: "Project Management Tool, Developed statistics page using Chart.js library",
+        link: "https://mysterious-sands-89389-6bcd1486e90b.herokuapp.com/stats",
+        repo: "https://github.com/whatnameshouldiuse/UTFSB-Project2-Group8"        
+    },
+    {
+        img: "/images/projects/tech_blog.png",
+        description: "Developed front-end/back-end application using MVC architecture and Sequalize",
+        link: "https://cool-tech-blog-c417147650ea.herokuapp.com/",
+        repo: "https://github.com/alla0810/tech-blog"                
+    },
+    {
+        img: "/images/projects/amazon.png",
+        description: "Simple Price/Review Viewer, Developed third-party Amazon API fetch application",
+        link: "https://alla0810.github.io/AmazonNavigator/",
+        repo: "https://github.com/alla0810/AmazonNavigator"                
+    },
+    {
+        img: "/images/projects/note-taker.gif",
+        description: "Daily Note Management Program using Express.js Back-End Program",
+        link: "https://note-taker-for-you-081d407650f3.herokuapp.com/",
+        repo: "https://github.com/alla0810/note_taker"                
     },
 
     {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "/images/projects/weather_dashboard.png",
+        description: "Five Days weather forecast for multiple cities, Server-Side API, Persistent localStorage",
+        link: "https://alla0810.github.io/weatherDashboard/",
+        repo: "https://github.com/alla0810/weatherDashboard"                
     },
     {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "/images/projects/work-scheduler.gif",
+        description: "Daily Planner based on Dynamically Updated HTML and CSS using jQuery and Day.js library",
+        link: "https://alla0810.github.io/workScheduler/",
+        repo: "https://github.com/alla0810/workScheduler"                
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "/images/projects/code_quiz.gif",
+        description: "Timed JavaScript Quiz that stores high scores, Dynamically Updated HTML and CSS using javaScript",
+        link: "https://alla0810.github.io/javascriptQuiz/",
+        repo: "https://github.com/alla0810/javascriptQuiz"                
     },
     {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "/images/projects/e-commerce.gif",
+        description: "Product Management Program using Sequalize ORM based on MySQL database",
+        link: "https://github.com/alla0810/e-commerce",
+        repo: "https://github.com/alla0810/e-commerce"                
     },
 ];
 

@@ -22,7 +22,7 @@ export const About = () => {
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
             <h1 className="display-4 mb-4">About me
-            <a href = "/files/KyoSook Shin.pdf"><img src="/images/resume-icon.png" className="resume_img" alt=""/></a>       
+
             </h1>           
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
@@ -35,8 +35,31 @@ export const About = () => {
           <Col lg="7" className="d-flex align-items-center">
             <div>
               <p>{dataabout.aboutme}</p>
-              <p>{dataabout.work}</p>              
+              <p>{dataabout.work}</p>       
+              <a href = "/files/KyoSook Shin.pdf">     
+                <div id="button_h" className="ac_btn btn ">
+                  resume download
+                  <div className="ring one"></div>
+                  <div className="ring two"></div>
+                  <div className="ring three"></div>
+                </div>  
+              </a>
             </div>
+          </Col>
+        </Row>
+        <Row className="sec_sp">
+          <Col lang="5">
+            <h3 className="color_sec py-4">Education</h3>
+          </Col>
+          <Col lg="7">
+            {services.map((data, i) => {
+              return (
+                <div className="service_ py-4" key={i}>
+                  <h5 className="service__title">{data.title}</h5>
+                  <p className="service_desc">{data.description}</p>
+                </div>
+              );
+            })}
           </Col>
         </Row>
         <Row className=" sec_sp">
@@ -78,21 +101,6 @@ export const About = () => {
                       <div className="progress-value">{data.value}%</div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
-          </Col>
-        </Row>
-        <Row className="sec_sp">
-          <Col lang="5">
-            <h3 className="color_sec py-4">Education</h3>
-          </Col>
-          <Col lg="7">
-            {services.map((data, i) => {
-              return (
-                <div className="service_ py-4" key={i}>
-                  <h5 className="service__title">{data.title}</h5>
-                  <p className="service_desc">{data.description}</p>
                 </div>
               );
             })}

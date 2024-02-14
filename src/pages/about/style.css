@@ -19,6 +19,13 @@
     margin-left: 20px;
 }
 
+.resume_box {
+    width: 200px;
+    border: solid white 2px;
+    text-decoration: none;
+    text-align: center;
+}
+
 .sec_sp {
     margin-bottom: calc(3rem + 5.128vw)
 }
