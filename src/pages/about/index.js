@@ -7,6 +7,7 @@ import {
   meta,
   worktimeline,
   education,
+  certificate,
   web_skills,
   embedded_skills,
   programming_languages,
@@ -155,6 +156,35 @@ export const About = () => {
             })}
           </Col>
         </Row>
+
+        <Row className=" sec_sp">
+          <Col lg="5">
+            <h3 className="color_sec py-4">Certificate</h3>
+          </Col>
+          <Col lg="7">
+            <table className="table caption-top">
+              <tbody>
+                {certificate.map((data, i) => {
+                  return (
+                    <tr key={i}>
+                      <th scope="row">{data.course}</th>
+                      <td>{data.where}</td>
+                      <td>
+                        <a href = {data.url}><img src={data.logo} className="resume_edu_img" alt=""/>
+                        </a>
+                      </td>
+                      <td>{data.date}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </Col>
+        </Row>
+
+        <Row className=" sec_sp">
+        </Row>
+
       </Container>
     </HelmetProvider>
   );

@@ -69,27 +69,60 @@ const education = [{
 
 
 
-const programming_languages = [{
-        name: "Python",
+const programming_languages = [
+    {
+        name: "C/C++",
         value: 90,
     },
     {
-        name: "Djano",
-        value: 85,
-    },
-    {
-        name: "Javascript",
-        value: 80,
-    },
-    {
-        name: "React",
+        name: "Assembler",
         value: 60,
     },
     {
-        name: "Jquery",
+        name: "JavaScript",
         value: 85,
     },
+    {
+        name: "Python",
+        value: 50,
+    },
+    {
+        name: "Java",
+        value: 60,
+    },
+    {
+        name: "React",
+        value: 70,
+    },
+    {
+        name: "HTML/CSS",
+        value: 60,
+    },
+    {
+        name: "SQL/Mongoose/GraphQL",
+        value: 70,
+    },
+
 ];
+
+
+const certificate = [{
+    course: "Test-Driven Development",
+    where: "ISTQB",
+    date: "Dec 2011",
+    logo: "/images/istqb.jpg",
+    url: "https://www.istqb.org/"
+},
+{
+    course: "Statistical Data Analysis, Lean SDLC",
+    where: "Six Sigma Master Black Belt",
+    date: "Dec 2008",
+    logo: "/images/six-sigma.jpg",
+    url: "https://www.sixsigmacouncil.org/lean-six-sigma-master-black-belt-certification/"
+},
+];
+
+
 
 const web_skills = [
     {
@@ -244,6 +277,7 @@ export {
     dataportfolio,
     worktimeline,
     education,
+    certificate,
     web_skills,
     embedded_skills,
     programming_languages,
