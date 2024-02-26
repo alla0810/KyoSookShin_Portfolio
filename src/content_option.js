@@ -24,20 +24,52 @@ const worktimeline = [{
         jobtitle: "Dicom PACS Software Development",
         where: "Dimedi Korea",
         date: "June 2013 - Aug 2014",
+        logo: "/images/dimedi.png",
+        url: "https://www.dimedi.co.kr/"
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
+        jobtitle: "Software System Engineering",
+        where: "Samsung Electronics",
+        date: "Jan 2009 - Sep 2012",
+        logo: "/images/samsung.jpg",
+        url: "https://www.samsung.com/us/about-us/our-business/it-and-mobile-communications/"
     },
     {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "WCDMA/HSDPA Modem Software/Firmware Development",
+        where: "Samsung Electronics",
+        date: "Sep 2002 - Dec 2008",
+        logo: "/images/samsung.jpg",
+        url: "https://www.samsung.com/us/about-us/our-business/it-and-mobile-communications/"
     },
 ];
 
-const skills = [{
+const education = [{
+    course: "Certificate of Web Programming",
+    where: "UT Austin Boot Camp",
+    date: "July 2023 - Jan 2024",
+    logo: "/images/bootcamp.png",
+    url: "https://techbootcamps.utexas.edu/coding/"
+},
+{
+    course: "Associate Degree at Art of Science",
+    where: "Austin Community College",
+    date: "Jan 2020 - Dec 2023",
+    logo: "/images/acc.jpg",
+    url: "https://www.austincc.edu/"
+},
+{
+    course: "Bachelor's Degree at Electronic Engineering",
+    where: "Yonsei University",
+    date: "",
+    logo: "/images/yonsei.jpg",
+    url: "https://www.yonsei.ac.kr/en_sc/index.jsp"
+},
+];
+
+
+
+
+const programming_languages = [{
         name: "Python",
         value: 90,
     },
@@ -59,27 +91,67 @@ const skills = [{
     },
 ];
 
-const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+const web_skills = [
+    {
+        title: "Front-End Web Development",
+        description: "HTML, CSS, Javascript, RESTful-APIs, JQuery, React, Redux",
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Back-End Web Development",
+        description: "Node.js, OOP Programming, Test-Driven Development (Jest), Express.js, MVC pattern, MERN stack",
     },
     {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Database",
+        description: "SQL, ORM (Sequalize, Mongoose), GraphQL",
+    },
+    {
+        title: "Version Control & Resource Management",
+        description: "Git, Gist, Slack",
+    },
+    {
+        title: "Configuration",
+        description: "Webpack, Vite",
+    },
+    {
+        title: "Deployment",
+        description: "Heroku, Render, Netlify",
     },
 ];
 
-const dataportfolio = [
+
+const embedded_skills = [
     {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-        repo: "#"                
-    },    
+        title: "SDLC (Software Development Life Cycle)",
+        description: "Requirement Analysis, Testcase Automation, Unit Test, Integration Test, High-level Design, Detailed-level Design, Implementation, Delivery, Deployment, On-Site Maintenance",
+    },
+    {
+        title: "Low Level Languages",
+        description: "C/C++, ARM/PowerPC Assembler",
+    },
+    {
+        title: "Application Level Languages",
+        description: "C++/C#, Python",
+    },
+    {
+        title: "CPU/MCU Control",
+        description: "ARM, PowerPC, Raspberry Pi, Beagle bone, Atmel",
+    },
+    {
+        title: "BSP (Board Support Package) & Bare Metal bringup",
+        description: "Kernel initialization, OS Porting/integration, IRQ, Device Driver",
+    },
+    {
+        title: "Peripheral Device Control",
+        description: "TCP/IP, ATM, Frame Relay, Circut voice/data, WCDMA/HSDPA control/data plane control",
+    },
+    {
+        title: "Embedded OS",
+        description: "Linux/Ubuntu, Necleus, VxWorks, Tiny OS, No OS",
+    },
+
+];
+
+const dataportfolio = [
     {    
         img: "/images/projects/quoteme.png",
         description: "Quote Generation depending on emotional state, social media to share quotes, personal emotion trace",
@@ -152,7 +224,7 @@ const dataportfolio = [
 const contactConfig = {
     YOUR_EMAIL: "kyosook.shin@gmail.com",
 //    YOUR_FONE: "(515)844-4068",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    description: "Please register to https://www.emailjs.com to securely email me.",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_msla5c9",
@@ -171,8 +243,10 @@ export {
     dataabout,
     dataportfolio,
     worktimeline,
-    skills,
-    services,
+    education,
+    web_skills,
+    embedded_skills,
+    programming_languages,
     introdata,
     contactConfig,
     socialprofils,

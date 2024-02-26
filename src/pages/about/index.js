@@ -6,8 +6,10 @@ import {
   dataabout,
   meta,
   worktimeline,
-  skills,
-  services,
+  education,
+  web_skills,
+  embedded_skills,
+  programming_languages,
 } from "../../content_option";
 
 export const About = () => {
@@ -49,10 +51,10 @@ export const About = () => {
         </Row>
         <Row className="sec_sp">
           <Col lang="5">
-            <h3 className="color_sec py-4">Education</h3>
+            <h3 className="color_sec py-4">Full Stack Development Skills</h3>
           </Col>
           <Col lg="7">
-            {services.map((data, i) => {
+            {web_skills.map((data, i) => {
               return (
                 <div className="service_ py-4" key={i}>
                   <h5 className="service__title">{data.title}</h5>
@@ -62,6 +64,22 @@ export const About = () => {
             })}
           </Col>
         </Row>
+        <Row className="sec_sp">
+          <Col lang="5">
+            <h3 className="color_sec py-4">Embedded SW Development Skills</h3>
+          </Col>
+          <Col lg="7">
+            {embedded_skills.map((data, i) => {
+              return (
+                <div className="service_ py-4" key={i}>
+                  <h5 className="service__title">{data.title}</h5>
+                  <p className="service_desc">{data.description}</p>
+                </div>
+              );
+            })}
+          </Col>
+        </Row>
+
         <Row className=" sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Work Experience</h3>
@@ -74,6 +92,10 @@ export const About = () => {
                     <tr key={i}>
                       <th scope="row">{data.jobtitle}</th>
                       <td>{data.where}</td>
+                      <td>
+                        <a href = {data.url}><img src={data.logo} className="resume_exp_img" alt=""/>
+                        </a>
+                      </td>
                       <td>{data.date}</td>
                     </tr>
                   );
@@ -82,12 +104,39 @@ export const About = () => {
             </table>
           </Col>
         </Row>
-        <Row className="sec_sp">
+
+        <Row className=" sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Skills</h3>
+            <h3 className="color_sec py-4">Education</h3>
           </Col>
           <Col lg="7">
-            {skills.map((data, i) => {
+            <table className="table caption-top">
+              <tbody>
+                {education.map((data, i) => {
+                  return (
+                    <tr key={i}>
+                      <th scope="row">{data.course}</th>
+                      <td>{data.where}</td>
+                      <td>
+                        <a href = {data.url}><img src={data.logo} className="resume_edu_img" alt=""/>
+                        </a>
+                      </td>
+                      <td>{data.date}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </Col>
+        </Row>
+
+
+        <Row className="sec_sp">
+          <Col lg="5">
+            <h3 className="color_sec py-4">Programming Languages</h3>
+          </Col>
+          <Col lg="7">
+            {programming_languages.map((data, i) => {
               return (
                 <div key={i}>
                   <h3 className="progress-title">{data.name}</h3>

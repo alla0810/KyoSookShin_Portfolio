@@ -6,8 +6,8 @@ import {
   dataabout,
   meta,
   worktimeline,
-  skills,
-  services,
+  programming_languages,
+  web_skills,
 } from "../../content_option";
 
 export const Resume = () => {
@@ -61,7 +61,7 @@ export const Resume = () => {
             <h3 className="color_sec py-4">Skills</h3>
           </Col>
           <Col lg="7">
-            {skills.map((data, i) => {
+            {web_skills.map((data, i) => {
               return (
                 <div key={i}>
                   <h3 className="progress-title">{data.name}</h3>

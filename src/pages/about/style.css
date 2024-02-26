@@ -12,6 +12,21 @@
     border-radius: 25px;
 }
 
+.resume_exp_img {
+    width: 70px;
+
+    overflow: auto;
+    margin-left: 20px;
+}
+
+.resume_edu_img {
+    width: 40px;
+
+    overflow: auto;
+    margin-left: 20px;
+}
+
+
 .resume_img {
     width: 50px;
 
