@@ -109,12 +109,13 @@ export const ContactUs = () => {
                 ""
               )}
             </address>
-            {/* <p>{contactConfig.description}</p> */}
-            <p>Please register at
+            <p>{contactConfig.description}</p>
+            <p>{contactConfig.author}</p>            
+            {/* <p>Please register at
               <br></br>  
             <a href={"https://www.emailjs.com"}> https://www.emailjs.com </a>
             <br></br>
-            to securely email me.</p>
+            to securely email me.</p> */}
           </Col>
           <Col lg="7" className="d-flex align-items-center">
             <form onSubmit={handleSubmit} className="contact__form w-100">

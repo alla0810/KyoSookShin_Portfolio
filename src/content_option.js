@@ -257,7 +257,8 @@ const dataportfolio = [
 const contactConfig = {
     YOUR_EMAIL: "kyosook.shin@gmail.com",
 //    YOUR_FONE: "(515)844-4068",
-    description: "Please register to https://www.emailjs.com to securely email me.",
+    description: "Life isn't about getting everything you want the instant you want it.  Some thing are worth waiting for.",
+    author: "- Mira Lyn Kelly -",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_msla5c9",
