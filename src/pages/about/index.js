@@ -33,7 +33,9 @@ export const About = () => {
         <Row className="sec_sp">
           <Col lg="5">
             {/* <h3 className="color_sec py-4">{dataabout.title}</h3> */}
-            <img className ="po_item about_img" src="/images/kyosook.png" alt="" />            
+            <div className="align-self-center ">
+              <img className ="po_item about_img" src="/images/kyosook.png" alt="" />            
+            </div>            
           </Col>
           <Col lg="7" className="d-flex align-items-center">
             <div>
