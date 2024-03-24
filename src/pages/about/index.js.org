@@ -15,25 +15,10 @@ import {
 } from "../../content_option";
 
 export const About = () => {
-  const [isVisible0, setIsVisible0] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
-  const handleToggleVisibility0 = () => {
-
-    setIsVisible0(!isVisible0);
-  };
-
-  const [isVisible1, setIsVisible1] = useState(false);
-
-  const handleToggleVisibility1 = () => {
-
-    setIsVisible1(!isVisible1);
-  };
-
-  const [isVisible2, setIsVisible2] = useState(false);
-
-  const handleToggleVisibility2 = () => {
-
-    setIsVisible2(!isVisible2);
+  const handleToggleVisibility = () => {
+    setIsVisible(!isVisible);
   };
 
 
@@ -111,47 +96,27 @@ export const About = () => {
             <h3 className="color_sec py-4">Work Experience</h3>
           </Col>
           <Col lg="7">
-            {/* <table className="table caption-top"> */}
             <table className="table caption-top">
-              <tbody >
-                  <tr >
-                      <th scope="row">{worktimeline[0].jobtitle}</th>
-                      <td>{worktimeline[0].where}</td>
-                      <td>
-                        <a href = {worktimeline[0].url}><img src={worktimeline[0].logo} className="resume_edu_img" alt=""/>
-                        </a>
-                      </td>
-                      <td>{worktimeline[0].date}</td>
-                      
-                  </tr>              
-              </tbody>
-
-              <tbody className="table caption-top">
-                  <tr>
-                      <th scope="row">{worktimeline[1].jobtitle}</th>
-                      <td>{worktimeline[1].where}</td>
-                      <td>
-                        <a href = {worktimeline[1].url}><img src={worktimeline[1].logo} className="resume_edu_img" alt=""/>
-                        </a>
-                      </td>
-                      <td>{worktimeline[1].date}</td>
-                  </tr>                
-              </tbody>
-
-              <tbody className="table caption-top">
-                  <tr>
-                      <th scope="row">{worktimeline[2].jobtitle}</th>
-                      <td>{worktimeline[2].where}</td>
-                      <td>
-                        <a href = {worktimeline[2].url}><img src={worktimeline[2].logo} className="resume_edu_img" alt=""/>
-                        </a>
-                      </td>
-                      <td>{worktimeline[2].date}</td>
-                  </tr>                
-
+              <tbody>
+                {worktimeline.map((data, i) => {
+                  return (
+                    <div>
+                    {/* <tr key={i} onClick={handleToggleVisibility} style={{cursor: 'pointer'}}> */}
+                    <tr key={i}>
+                        <th scope="row">{data.jobtitle}</th>
+                        <td>{data.where}</td>
+                        <td>
+                          <a href = {data.url}><img src={data.logo} className="resume_exp_img" alt=""/>
+                          </a>
+                        </td>
+                        <td>{data.date}</td>
+                    </tr>
+                      {/* {isVisible && <p> This content appears when clicked! </p>} */}
+                    </div>
+                  );
+                })}
               </tbody>
             </table>
-
           </Col>
         </Row>
 

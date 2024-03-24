@@ -25,21 +25,27 @@ const worktimeline = [{
         where: "Dimedi Korea",
         date: "June 2013 - Aug 2014",
         logo: "/images/dimedi.png",
-        url: "https://www.dimedi.co.kr/"
+        url: "https://www.dimedi.co.kr/",
+        description: [
+            "job description 00",
+            "job description 01"
+        ],
     },
     {
         jobtitle: "Software System Engineering",
         where: "Samsung Electronics",
         date: "Jan 2009 - Sep 2012",
         logo: "/images/samsung.jpg",
-        url: "https://www.samsung.com/us/about-us/our-business/it-and-mobile-communications/"
+        url: "https://www.samsung.com/us/about-us/our-business/it-and-mobile-communications/",
+        description: "job description 1"
     },
     {
         jobtitle: "WCDMA/HSDPA Modem Software/Firmware Development",
         where: "Samsung Electronics",
         date: "Sep 2002 - Dec 2008",
         logo: "/images/samsung.jpg",
-        url: "https://www.samsung.com/us/about-us/our-business/it-and-mobile-communications/"
+        url: "https://www.samsung.com/us/about-us/our-business/it-and-mobile-communications/",
+        description: "job description 2"
     },
 ];
 
@@ -186,6 +192,12 @@ const embedded_skills = [
 
 const dataportfolio = [
     {    
+        img: "/images/projects/e-fashion.png",
+        description: "MERN React Full Stack Dashboard for a E-Fashion ecommerce company",
+        link: "https://dashboard-frontend-m26y.onrender.com/dashboard",
+        repo: "https://github.com/alla0810/dashboard"
+    },
+    {    
         img: "/images/projects/quoteme.png",
         description: "Quote Generation depending on emotional state, social media to share quotes, personal emotion trace",
         link: "https://quoteme-1b7p.onrender.com/",
@@ -215,12 +227,12 @@ const dataportfolio = [
         link: "https://cool-tech-blog-c417147650ea.herokuapp.com/",
         repo: "https://github.com/alla0810/tech-blog"                
     },
-    {
-        img: "/images/projects/amazon.png",
-        description: "Simple Price/Review Viewer, Developed third-party Amazon API fetch application",
-        link: "https://alla0810.github.io/AmazonNavigator/",
-        repo: "https://github.com/alla0810/AmazonNavigator"                
-    },
+    // {
+    //     img: "/images/projects/amazon.png",
+    //     description: "Simple Price/Review Viewer, Developed third-party Amazon API fetch application",
+    //     link: "https://alla0810.github.io/AmazonNavigator/",
+    //     repo: "https://github.com/alla0810/AmazonNavigator"                
+    // },
     {
         img: "/images/projects/note-taker.gif",
         description: "Daily Note Management Program using Express.js Back-End Program",
