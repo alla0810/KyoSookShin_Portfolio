@@ -15,26 +15,26 @@ import {
 } from "../../content_option";
 
 export const About = () => {
-  const [isVisible0, setIsVisible0] = useState(false);
+  // const [isVisible0, setIsVisible0] = useState(false);
 
-  const handleToggleVisibility0 = () => {
+  // const handleToggleVisibility0 = () => {
 
-    setIsVisible0(!isVisible0);
-  };
+  //   setIsVisible0(!isVisible0);
+  // };
 
-  const [isVisible1, setIsVisible1] = useState(false);
+  // const [isVisible1, setIsVisible1] = useState(false);
 
-  const handleToggleVisibility1 = () => {
+  // const handleToggleVisibility1 = () => {
 
-    setIsVisible1(!isVisible1);
-  };
+  //   setIsVisible1(!isVisible1);
+  // };
 
-  const [isVisible2, setIsVisible2] = useState(false);
+  // const [isVisible2, setIsVisible2] = useState(false);
 
-  const handleToggleVisibility2 = () => {
+  // const handleToggleVisibility2 = () => {
 
-    setIsVisible2(!isVisible2);
-  };
+  //   setIsVisible2(!isVisible2);
+  // };
 
 
   return (
