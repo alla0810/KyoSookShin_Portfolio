@@ -191,12 +191,12 @@ const embedded_skills = [
 ];
 
 const dataportfolio = [
-    {    
-        img: "/images/projects/e-fashion.png",
-        description: "MERN React Full Stack Dashboard for an E-Fashion ecommerce company",
-        link: "https://dashboard-frontend-m26y.onrender.com/",
-        repo: "https://github.com/alla0810/dashboard"
-    },
+    // {    
+    //     img: "/images/projects/e-fashion.png",
+    //     description: "MERN React Full Stack Dashboard for an E-Fashion ecommerce company",
+    //     link: "https://dashboard-frontend-m26y.onrender.com/",
+    //     repo: "https://github.com/alla0810/dashboard"
+    // },
     {    
         img: "/images/projects/quoteme.png",
         description: "Quote Generation depending on emotional state, social media to share quotes, personal emotion trace",
